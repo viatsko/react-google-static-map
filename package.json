@@ -1,0 +1,21 @@
+{
+  "name": "react-google-static-map",
+  "version": "0.1.0",
+  "description": "A wrapper for Google's Static Maps",
+  "main": "GoogleStaticMap.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:dwr/react-google-static-map.git"
+  },
+  "files": [
+    "GoogleStaticMap.js",
+    "README.md"
+  ],
+  "keywords": [
+    "react-component"
+  ],
+  "author": "Valerii Iatsko <valerii.iatsko@icloud.com> (https://github.com/dwr)",
+  "peerDependencies": {
+    "react": ">=0.14"
+  }
+}

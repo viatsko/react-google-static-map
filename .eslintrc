@@ -1,0 +1,42 @@
+{
+  "extends": "eslint-config-airbnb",
+  "env": {
+    "browser": true,
+    "mocha": true,
+    "node": true
+  },
+  "rules": {
+    "react/jsx-uses-react": 2,
+    "react/jsx-uses-vars": 2,
+    "react/react-in-jsx-scope": 2,
+
+    "id-length": [2, {"exceptions": ["_", "i", "j", "k", "l", "n"]}],
+
+    //Temporarirly disabled due to a possible bug in babel-eslint (todomvc example)
+    "block-scoped-var": 0,
+    // Temporarily disabled for test/* until babel/babel-eslint#33 is resolved
+    "padded-blocks": 0,
+
+    // DISABLED. These aren't compatible with our style
+    // We use this for private/internal variables
+    "no-underscore-dangle": 0,
+
+    // We pass constructors around / access them from members
+    "new-cap": 0,
+
+    // We do this a lot.
+    "no-use-before-define": 0,
+
+    // We do this in a few places to align values
+    "key-spacing": 0,
+
+    // It's nice to be able to leave catch blocks empty
+    "no-empty": 0,
+
+    // It makes code more readable to make this explicit sometimes
+    "no-undef-init": 0
+  },
+  "plugins": [
+    "react"
+  ]
+}
